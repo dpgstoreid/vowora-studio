@@ -125,8 +125,8 @@ window.WEDDING_CONFIG = {
 
   // Watermark / Branding
   branding: {
-    namaBrand: "UndanganKita.id",
-    linkBrand: "https://instagram.com",
+    namaBrand: "DPGSTORE.ID (Palugada Serba Ada)",
+    linkBrand: "https://wa.me/6287898199000",
     pesanFooter: "Dibuat dengan segenap cinta oleh"
   }
 };

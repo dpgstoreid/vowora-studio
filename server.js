@@ -196,17 +196,17 @@ const server = http.createServer((req, res) => {
       res.end(`
         <div style="font-family:sans-serif; text-align:center; padding:50px; background:#0b1120; color:#fff; min-height:100vh;">
           <h2 style="font-size:2rem; color:#d4af37;">Undangan Tidak Ditemukan</h2>
-          <p style="color:#94a3b8;">Undangan dengan tautan <b>${slug}</b> belum terdaftar di Vowora.</p>
-          <a href="/" style="display:inline-block; margin-top:20px; padding:10px 24px; background:#d4af37; color:#000; border-radius:12px; text-decoration:none; font-weight:bold;">Kembali ke Beranda Vowora</a>
+          <p style="color:#94a3b8;">Undangan dengan tautan <b>${slug}</b> belum terdaftar di DPGSTORE.ID.</p>
+          <a href="/" style="display:inline-block; margin-top:20px; padding:10px 24px; background:#d4af37; color:#000; border-radius:12px; text-decoration:none; font-weight:bold;">Kembali ke Beranda DPGSTORE.ID</a>
         </div>
       `);
       return;
     }
 
-    // Set default Vowora branding
+    // Set default DPGSTORE.ID branding
     if (!inv.branding) {
       inv.branding = {
-        namaBrand: "Vowora.studio",
+        namaBrand: "DPGSTORE.ID (Palugada Serba Ada)",
         linkBrand: "/",
         pesanFooter: "Crafted with love by"
       };
