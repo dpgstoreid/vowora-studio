@@ -1,0 +1,21 @@
+{
+  "name": "vowora-studio",
+  "version": "1.0.0",
+  "description": "Vowora - Luxury Digital Wedding Invitation Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "prod": "pm2 start server.js --name vowora"
+  },
+  "keywords": [
+    "wedding",
+    "invitation",
+    "undangan-digital",
+    "vowora"
+  ],
+  "author": "Vowora Studio",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

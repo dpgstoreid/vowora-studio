@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vowora — Luxury Digital Wedding Invitation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .gold-gradient {
+      background: linear-gradient(135deg, #d4af37 0%, #aa8222 100%);
+    }
+    .gold-text {
+      background: linear-gradient(135deg, #f3e7c4 0%, #d4af37 50%, #aa8222 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl gold-gradient flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amber-500/20">
+          <i data-lucide="gem" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-bold tracking-tight serif text-white">Vowora<span class="text-amber-400">.</span></span>
+          <span class="block text-[9px] uppercase tracking-widest text-slate-400 -mt-1 font-semibold">Digital Invitation</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#fitur" class="hover:text-amber-400 transition">Fitur Utama</a>
+        <a href="#tema" class="hover:text-amber-400 transition">Pilihan Tema</a>
+        <a href="#harga" class="hover:text-amber-400 transition">Paket Harga</a>
+        <a href="#cara-pesan" class="hover:text-amber-400 transition">Cara Pesan</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="/admin" class="text-xs text-slate-400 hover:text-amber-400 font-semibold px-3 py-2 rounded-lg border border-slate-800 hover:border-slate-700 transition flex items-center gap-1.5" title="Buka Studio Pembuat Undangan">
+          <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i>
+          <span class="hidden sm:inline">Studio Admin</span>
+        </a>
+        <a href="#harga" class="px-5 py-2.5 rounded-xl gold-gradient hover:opacity-90 text-slate-950 font-bold text-xs shadow-lg shadow-amber-500/20 transition flex items-center gap-2">
+          <span>Buat Undangan</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden">
+    <!-- Background Glow -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10 space-y-8">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-amber-500/30 text-amber-300 text-xs font-semibold tracking-wide shadow-inner">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+        Platform Undangan Pernikahan Digital Eksklusif
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight serif text-white leading-[1.1]">
+        Abadikan Momen Sakral dalam <br>
+        <span class="gold-text italic font-normal">Kemewahan Digital.</span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-normal leading-relaxed">
+        Hadirkan pengalaman mengesankan bagi para tamu dengan website undangan interaktif: personalisasi nama tamu, musik romantis, amplop digital, dan integrasi Google Calendar.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="/u/dimas-sarah?to=Bpk.+Joko+Widodo" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl gold-gradient hover:opacity-95 text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/25 transition flex items-center justify-center gap-2.5">
+          <i data-lucide="eye" class="w-4 h-4"></i>
+          Lihat Contoh Demo Undangan
+        </a>
+        <a href="#fitur" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-850 text-white font-semibold text-sm border border-slate-800 transition flex items-center justify-center gap-2">
+          Jelajahi Fitur Lengkap
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400"></i>
+        </a>
+      </div>
+
+      <!-- Live Stats Highlights -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-16 border-t border-slate-900/80 text-center">
+        <div>
+          <div class="text-3xl font-extrabold text-white serif">100%</div>
+          <div class="text-xs text-slate-500 mt-1">Mobile Responsive</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-amber-400 serif">Unlimited</div>
+          <div class="text-xs text-slate-500 mt-1">Nama Tamu Bebas Kirim</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white serif">4 Tema</div>
+          <div class="text-xs text-slate-500 mt-1">Warna Elegan Modern</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-amber-400 serif">Instant</div>
+          <div class="text-xs text-slate-500 mt-1">Siap Sebar via WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR UTAMA SECTION -->
+  <section id="fitur" class="py-24 bg-slate-900/50 border-y border-slate-900 relative">
+    <div class="max-w-7xl mx-auto px-6 space-y-16">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Keunggulan Vowora</span>
+        <h2 class="text-3xl sm:text-5xl font-bold serif text-white">Dirancang untuk Kesempurnaan Hari Bahagia Anda</h2>
+        <p class="text-sm text-slate-400">Setiap detail dipersiapkan agar proses mengundang kerabat menjadi lebih praktis, rapi, dan berkesan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 space-y-4 hover:border-amber-500/40 transition group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center group-hover:scale-110 transition">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white serif">Nama Tamu Otomatis</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Satu website bisa memuat ratusan nama tamu berbeda. Cukup gunakan tautan personal unik, nama tamu langsung terpampang elegan di halaman cover pembuka.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 space-y-4 hover:border-amber-500/40 transition group">
+          <div class="w-12 h-12 rounded-2xl bg-rose-500/10 text-rose-400 flex items-center justify-center group-hover:scale-110 transition">
+            <i data-lucide="music" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white serif">Musik Romantis Otomatis</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Dilengkapi koleksi musik instrumental piano & biola romantis yang otomatis berputar syahdu saat tamu menekan tombol buka undangan.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 space-y-4 hover:border-amber-500/40 transition group">
+          <div class="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center group-hover:scale-110 transition">
+            <i data-lucide="calendar" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white serif">Sync ke Google Calendar</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Tamu cukup mengklik satu tombol untuk menyimpan jadwal akad dan resepsi ke kalender ponsel pintar mereka lengkap dengan alarm pengingat.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 space-y-4 hover:border-amber-500/40 transition group">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition">
+            <i data-lucide="credit-card" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white serif">Amplop Digital & QRIS</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Menyediakan tombol salin nomor rekening bank (BCA, Mandiri, BNI, dll.) dan alamat kirim kado dengan notifikasi instan.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 space-y-4 hover:border-amber-500/40 transition group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center group-hover:scale-110 transition">
+            <i data-lucide="video" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white serif">Live Streaming & Dresscode</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Akomodasi keluarga jauh dengan tombol siaran virtual YouTube/Zoom, serta panduan palet warna pakaian (dresscode) untuk para tamu.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 space-y-4 hover:border-amber-500/40 transition group">
+          <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center group-hover:scale-110 transition">
+            <i data-lucide="message-square" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white serif">RSVP & Doa Restu Live</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Ketahui estimasi kehadiran tamu dan simpan ucapan doa restu yang langsung tayang secara interaktif di buku tamu virtual.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PILIHAN TEMA SECTION -->
+  <section id="tema" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 space-y-16">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Koleksi Desain</span>
+        <h2 class="text-3xl sm:text-5xl font-bold serif text-white">4 Palet Warna Eksklusif</h2>
+        <p class="text-sm text-slate-400">Pilih tema warna yang paling selaras dengan konsep dekorasi pernikahan Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Tema 1 -->
+        <div class="p-6 rounded-3xl bg-slate-950 border border-slate-800 text-center space-y-4 hover:border-amber-400/50 transition">
+          <div class="w-14 h-14 rounded-full bg-[#b38b4d] mx-auto border-4 border-slate-900 shadow-lg"></div>
+          <div>
+            <h3 class="text-lg font-bold text-white serif">Champagne Gold</h3>
+            <p class="text-xs text-slate-400 mt-1">Kemewahan abadi dengan sentuhan emas klasik dan hangat.</p>
+          </div>
+          <a href="/u/dimas-sarah?to=Tamu+Undangan" target="_blank" class="block w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 font-semibold text-xs border border-slate-800 transition">
+            Lihat Preview
+          </a>
+        </div>
+
+        <!-- Tema 2 -->
+        <div class="p-6 rounded-3xl bg-slate-950 border border-slate-800 text-center space-y-4 hover:border-emerald-400/50 transition">
+          <div class="w-14 h-14 rounded-full bg-[#4a6f54] mx-auto border-4 border-slate-900 shadow-lg"></div>
+          <div>
+            <h3 class="text-lg font-bold text-white serif">Sage Botanical</h3>
+            <p class="text-xs text-slate-400 mt-1">Nuansa alam yang menenangkan, modern, dan paling tren.</p>
+          </div>
+          <a href="/u/dimas-sarah?to=Tamu+Undangan" target="_blank" class="block w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 transition">
+            Lihat Preview
+          </a>
+        </div>
+
+        <!-- Tema 3 -->
+        <div class="p-6 rounded-3xl bg-slate-950 border border-slate-800 text-center space-y-4 hover:border-rose-400/50 transition">
+          <div class="w-14 h-14 rounded-full bg-[#b4576f] mx-auto border-4 border-slate-900 shadow-lg"></div>
+          <div>
+            <h3 class="text-lg font-bold text-white serif">Romantic Rose</h3>
+            <p class="text-xs text-slate-400 mt-1">Nuansa merah muda pastel yang manis, lembut, dan feminin.</p>
+          </div>
+          <a href="/u/dimas-sarah?to=Tamu+Undangan" target="_blank" class="block w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-rose-400 font-semibold text-xs border border-slate-800 transition">
+            Lihat Preview
+          </a>
+        </div>
+
+        <!-- Tema 4 -->
+        <div class="p-6 rounded-3xl bg-slate-950 border border-slate-800 text-center space-y-4 hover:border-sky-400/50 transition">
+          <div class="w-14 h-14 rounded-full bg-[#0b1120] border-2 border-[#d4af37] mx-auto shadow-lg"></div>
+          <div>
+            <h3 class="text-lg font-bold text-white serif">Midnight Royal</h3>
+            <p class="text-xs text-slate-400 mt-1">Nuansa biru malam dramatis dengan aksen emas yang gagah.</p>
+          </div>
+          <a href="/u/dimas-sarah?to=Tamu+Undangan" target="_blank" class="block w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-sky-400 font-semibold text-xs border border-slate-800 transition">
+            Lihat Preview
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAKET HARGA SECTION -->
+  <section id="harga" class="py-24 bg-slate-900/50 border-y border-slate-900 relative">
+    <div class="max-w-7xl mx-auto px-6 space-y-16">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Investasi Terbaik</span>
+        <h2 class="text-3xl sm:text-5xl font-bold serif text-white">Paket Undangan Digital Vowora</h2>
+        <p class="text-sm text-slate-400">Harga transparan tanpa biaya tersembunyi. Aktif sampai hari pernikahan selesai.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Paket Silver -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 flex flex-col justify-between space-y-8 hover:border-slate-700 transition">
+          <div class="space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Paket Hemat</span>
+            <h3 class="text-2xl font-bold text-white serif">Vowora Silver</h3>
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white">Rp 79.000</span>
+            </div>
+            <p class="text-xs text-slate-400">Pilihan pas untuk acara intim dan praktis.</p>
+            
+            <ul class="pt-6 border-t border-slate-900 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Masa aktif 3 bulan</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Unlimited Nama Tamu</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Galeri Foto (Maks 5 Foto)</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Petunjuk Google Maps</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Countdown Timer</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> RSVP & Buku Tamu</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/6287898199000?text=Halo%20Vowora,%20saya%20tertarik%20memesan%20Paket%20Silver%20(Rp%2079.000)" target="_blank" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs text-center border border-slate-700 transition">
+            Pilih Paket Silver
+          </a>
+        </div>
+
+        <!-- Paket Gold (Best Seller) -->
+        <div class="p-8 rounded-3xl bg-slate-950 border-2 border-amber-500/80 flex flex-col justify-between space-y-8 relative shadow-2xl shadow-amber-500/10">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full gold-gradient text-slate-950 font-extrabold text-[10px] uppercase tracking-wider">
+            ⭐ Paling Diminati (Best Seller)
+          </div>
+
+          <div class="space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Paket Lengkap</span>
+            <h3 class="text-2xl font-bold text-white serif">Vowora Gold</h3>
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-amber-400">Rp 149.000</span>
+            </div>
+            <p class="text-xs text-slate-400">Fitur komplit paling direkomendasikan untuk pesta pernikahan.</p>
+            
+            <ul class="pt-6 border-t border-slate-900 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2.5 font-semibold text-white"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Semua Fitur Paket Silver</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Masa aktif 6 bulan</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Galeri Foto (Maks 15 Foto)</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Musik Romantis Bebas Pilih</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Amplop Digital & Kirim Kado</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Sync to Google Calendar</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Panduan Dresscode Tamu</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/6287898199000?text=Halo%20Vowora,%20saya%20ingin%20memesan%20Paket%20Gold%20Best%20Seller%20(Rp%20149.000)" target="_blank" class="w-full py-3.5 rounded-xl gold-gradient text-slate-950 font-bold text-xs text-center shadow-lg shadow-amber-500/20 hover:opacity-90 transition">
+            Pesan Paket Gold Sekarang
+          </a>
+        </div>
+
+        <!-- Paket Platinum -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 flex flex-col justify-between space-y-8 hover:border-slate-700 transition">
+          <div class="space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Paket Eksklusif VIP</span>
+            <h3 class="text-2xl font-bold text-white serif">Vowora Platinum</h3>
+            <div class="flex items-baseline gap-1">
+              <span class="text-4xl font-extrabold text-white">Rp 249.000</span>
+            </div>
+            <p class="text-xs text-slate-400">Pengalaman mewah tanpa batas dengan layanan VIP priority.</p>
+            
+            <ul class="pt-6 border-t border-slate-900 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2.5 font-semibold text-white"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Semua Fitur Paket Gold</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Masa aktif 12 bulan (1 Tahun)</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Galeri Foto & Video YouTube</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Slot Live Streaming Virtual</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Tool WhatsApp Broadcast Otomatis</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Revisi Tanpa Batas (Minor)</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/6287898199000?text=Halo%20Vowora,%20saya%20tertarik%20memesan%20Paket%20VIP%20Platinum%20(Rp%20249.000)" target="_blank" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs text-center border border-slate-700 transition">
+            Pilih Paket Platinum
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CARA PESAN SECTION -->
+  <section id="cara-pesan" class="py-24 relative">
+    <div class="max-w-5xl mx-auto px-6 space-y-16">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Alur Praktis</span>
+        <h2 class="text-3xl sm:text-5xl font-bold serif text-white">Cara Pemesanan yang Sangat Mudah</h2>
+        <p class="text-sm text-slate-400">Hanya 3 langkah sederhana sampai undangan siap dibagikan ke seluruh keluarga.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="space-y-3 p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <div class="w-12 h-12 rounded-full gold-gradient text-slate-950 font-bold flex items-center justify-center mx-auto text-base">1</div>
+          <h3 class="font-bold text-lg text-white serif">Pilih Paket & Tema</h3>
+          <p class="text-xs text-slate-400">Hubungi kami melalui WhatsApp untuk konfirmasi paket yang diinginkan.</p>
+        </div>
+
+        <div class="space-y-3 p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <div class="w-12 h-12 rounded-full gold-gradient text-slate-950 font-bold flex items-center justify-center mx-auto text-base">2</div>
+          <h3 class="font-bold text-lg text-white serif">Isi Data Acara</h3>
+          <p class="text-xs text-slate-400">Kirimkan rincian nama mempelai, tanggal acara, lokasi Google Maps, dan foto momen Anda.</p>
+        </div>
+
+        <div class="space-y-3 p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <div class="w-12 h-12 rounded-full gold-gradient text-slate-950 font-bold flex items-center justify-center mx-auto text-base">3</div>
+          <h3 class="font-bold text-lg text-white serif">Undangan Siap Sebar!</h3>
+          <p class="text-xs text-slate-400">Dalam 1–2 hari kerja, tautan undangan Anda siap dibagikan ke ratusan tamu dengan nama personal.</p>
+        </div>
+      </div>
+
+      <!-- WhatsApp CTA Box -->
+      <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-amber-500/20 via-slate-900 to-slate-950 border border-amber-500/30 text-center space-y-6">
+        <h3 class="text-2xl sm:text-4xl font-bold text-white serif">Konsultasikan Pernikahan Anda dengan Tim Vowora</h3>
+        <p class="text-sm text-slate-300 max-w-xl mx-auto">Masih ada pertanyaan seputar tema, lagu, atau teknis pengiriman tamu? Kami siap membantu dengan senang hati.</p>
+        <a href="https://wa.me/6287898199000?text=Halo%20Vowora,%20saya%20mau%20konsultasi%20pembuatan%20undangan%20digital" target="_blank" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-xl gold-gradient text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/20 hover:opacity-90 transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Chat WhatsApp Sekarang
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP CHAT BUTTON (AUTO LEADS CAPTURE) -->
+  <a href="https://wa.me/6287898199000?text=Halo%20Vowora,%20saya%20mau%20tanya-tanya%20tentang%20undangan%20digital" target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs rounded-full shadow-2xl shadow-emerald-500/50 hover:scale-105 active:scale-95 transition-all" title="Chat WhatsApp Customer Service">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <span class="hidden sm:inline">Hubungi WhatsApp</span>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="py-12 bg-slate-950 border-t border-slate-800/80 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <div class="flex items-center justify-center md:justify-start gap-2 text-white font-bold text-lg serif">
+          <i data-lucide="gem" class="w-4 h-4 text-amber-400"></i>
+          Vowora Studio
+        </div>
+        <p class="text-[11px] text-slate-500 mt-1">Crafting beautiful & unforgettable digital vows.</p>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#fitur" class="hover:text-slate-300 transition">Fitur</a>
+        <a href="#tema" class="hover:text-slate-300 transition">Tema</a>
+        <a href="#harga" class="hover:text-slate-300 transition">Harga</a>
+        <a href="/admin" class="text-amber-400 hover:underline font-semibold">Studio Admin</a>
+      </div>
+
+      <p class="text-[11px]">© 2026 Vowora. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

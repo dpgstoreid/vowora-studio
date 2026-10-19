@@ -1,0 +1,44 @@
+[
+  {
+    "order_id": "ORD-001",
+    "mempelai": "Dimas & Sarah",
+    "no_wa": "081234567890",
+    "paket": "Paket Gold (Rp 150.000)",
+    "biaya_total": 150000,
+    "dp_dibayar": 50000,
+    "status_pembayaran": "DP",
+    "tanggal_order": "2026-10-15",
+    "deadline_draft": "2026-10-21",
+    "tanggal_acara": "2026-12-25",
+    "status_pengerjaan": "Dikerjakan",
+    "catatan": "Tema warna sage green gold, lagu minta request khusus"
+  },
+  {
+    "order_id": "ORD-002",
+    "mempelai": "Rian & Putri",
+    "no_wa": "085712345678",
+    "paket": "Paket Platinum (Rp 250.000)",
+    "biaya_total": 250000,
+    "dp_dibayar": 250000,
+    "status_pembayaran": "Lunas",
+    "tanggal_order": "2026-10-10",
+    "deadline_draft": "2026-10-18",
+    "tanggal_acara": "2026-10-26",
+    "status_pengerjaan": "Selesai",
+    "catatan": "Sudah lunas, acara H-7 siap kirim reminder cek daftar tamu"
+  },
+  {
+    "order_id": "ORD-003",
+    "mempelai": "Bagus & Nabila",
+    "no_wa": "081398765432",
+    "paket": "Paket Silver (Rp 80.000)",
+    "biaya_total": 80000,
+    "dp_dibayar": 40000,
+    "status_pembayaran": "DP",
+    "tanggal_order": "2026-10-18",
+    "deadline_draft": "2026-10-20",
+    "tanggal_acara": "2026-11-15",
+    "status_pengerjaan": "Antrean",
+    "catatan": "Foto belum dikirim semua, perlu follow up Google Drive"
+  }
+]

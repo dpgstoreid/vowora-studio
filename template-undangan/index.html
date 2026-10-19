@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Undangan Pernikahan</title>
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- MOBILE WRAPPER -->
+  <div class="mobile-wrapper" id="mobileWrapper">
+
+    <!-- 1. COVER SCREEN / POPUP PEMBUKA -->
+    <div id="coverScreen" class="cover-screen">
+      <div class="cover-content">
+        <div class="title-sub">The Wedding Of</div>
+        <h1 id="coverTitleCouple" class="title-couple">Dimas & Sarah</h1>
+      </div>
+
+      <div class="cover-content">
+        <div class="guest-box">
+          <div class="guest-to">Kepada Yth. Bapak/Ibu/Saudara/i:</div>
+          <div id="guestName" class="guest-name">Tamu Undangan</div>
+        </div>
+
+        <button id="btnOpen" class="btn-open">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Buka Undangan
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. FLOATING AUDIO CONTROLLER -->
+    <div id="audioController" class="audio-controller" title="Putar/Jeda Musik">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+    </div>
+    <audio id="bgAudio" loop preload="auto"></audio>
+
+    <!-- 3. HERO INNER SECTION -->
+    <header id="heroInner" class="hero-inner">
+      <div class="hero-inner-content" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="title-sub">Walimatul 'Ursy</div>
+        <h2 id="heroTitleCouple" class="title-couple" style="font-size: 2.6rem;">Dimas & Sarah</h2>
+        <p style="font-size: 0.9rem; letter-spacing: 2px;">SAVE THE DATE</p>
+      </div>
+    </header>
+
+    <!-- 4. QUOTE SECTION -->
+    <section class="section-quote" data-aos="fade-up" data-aos-duration="800">
+      <div style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;">❝</div>
+      <p id="quoteText" style="font-style: italic; font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 12px;"></p>
+      <div id="quoteSource" style="font-weight: 600; color: var(--primary); font-size: 0.85rem;"></div>
+    </section>
+
+    <!-- 5. MEMPELAI SECTION -->
+    <section>
+      <div class="section-tag" data-aos="fade-up">Mempelai</div>
+      <h3 class="section-title" data-aos="fade-up">Groom & Bride</h3>
+
+      <!-- Mempelai Pria -->
+      <div class="couple-card" data-aos="fade-up" data-aos-duration="900">
+        <div class="couple-photo-wrapper">
+          <img id="priaFoto" src="" alt="Mempelai Pria" class="couple-photo">
+        </div>
+        <h4 id="priaNama" class="couple-name"></h4>
+        <p id="priaOrtu" class="couple-parents"></p>
+        <a id="priaIg" href="#" target="_blank" class="couple-ig">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span id="priaIgText"></span>
+        </a>
+      </div>
+
+      <div class="couple-separator" data-aos="zoom-in">&</div>
+
+      <!-- Mempelai Wanita -->
+      <div class="couple-card" data-aos="fade-up" data-aos-duration="900">
+        <div class="couple-photo-wrapper">
+          <img id="wanitaFoto" src="" alt="Mempelai Wanita" class="couple-photo">
+        </div>
+        <h4 id="wanitaNama" class="couple-name"></h4>
+        <p id="wanitaOrtu" class="couple-parents"></p>
+        <a id="wanitaIg" href="#" target="_blank" class="couple-ig">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span id="wanitaIgText"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 6. ACARA & COUNTDOWN -->
+    <section style="background: var(--bg-card);">
+      <div class="section-tag" data-aos="fade-up">Waktu & Tempat</div>
+      <h3 class="section-title" data-aos="fade-up">Save The Date</h3>
+
+      <!-- Countdown Grid -->
+      <div class="countdown-grid" data-aos="zoom-in">
+        <div class="countdown-box">
+          <div id="days" class="countdown-num">00</div>
+          <div class="countdown-label">Hari</div>
+        </div>
+        <div class="countdown-box">
+          <div id="hours" class="countdown-num">00</div>
+          <div class="countdown-label">Jam</div>
+        </div>
+        <div class="countdown-box">
+          <div id="minutes" class="countdown-num">00</div>
+          <div class="countdown-label">Menit</div>
+        </div>
+        <div class="countdown-box">
+          <div id="seconds" class="countdown-num">00</div>
+          <div class="countdown-label">Detik</div>
+        </div>
+      </div>
+
+      <!-- Akad Nikah Card -->
+      <div class="event-card" data-aos="fade-up">
+        <h4 class="event-title">Akad Nikah</h4>
+        <div id="akadTanggal" class="event-detail" style="font-weight: 600; color: var(--text-main);"></div>
+        <div id="akadWaktu" class="event-detail"></div>
+        <div id="akadTempat" class="event-venue"></div>
+        <div id="akadAlamat" class="event-detail" style="font-size: 0.85rem; margin-top: 4px;"></div>
+        
+        <div class="event-actions">
+          <a id="akadMaps" href="#" target="_blank" class="btn-maps">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Petunjuk Lokasi Maps
+          </a>
+          <a id="akadCalendar" href="#" target="_blank" class="btn-calendar">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Simpan di Google Calendar
+          </a>
+        </div>
+      </div>
+
+      <!-- Resepsi Card -->
+      <div class="event-card" data-aos="fade-up">
+        <h4 class="event-title">Resepsi Pernikahan</h4>
+        <div id="resepsiTanggal" class="event-detail" style="font-weight: 600; color: var(--text-main);"></div>
+        <div id="resepsiWaktu" class="event-detail"></div>
+        <div id="resepsiTempat" class="event-venue"></div>
+        <div id="resepsiAlamat" class="event-detail" style="font-size: 0.85rem; margin-top: 4px;"></div>
+        
+        <div class="event-actions">
+          <a id="resepsiMaps" href="#" target="_blank" class="btn-maps">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Petunjuk Lokasi Maps
+          </a>
+          <a id="resepsiCalendar" href="#" target="_blank" class="btn-calendar">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Simpan di Google Calendar
+          </a>
+        </div>
+      </div>
+
+      <!-- DRESSCODE SECTION -->
+      <div class="dresscode-card" data-aos="fade-up">
+        <div style="font-weight: 700; font-size: 1rem; color: var(--primary);">PANDUAN DRESSCODE</div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;" id="dresscodeNotes">
+          Tamu undangan disarankan mengenakan pakaian bertema warna berikut:
+        </p>
+        <div class="swatches-container" id="dresscodeSwatches">
+          <div class="swatch-item">
+            <div class="color-swatch" style="background: #a3b899;"></div>
+            <span class="swatch-name">Sage</span>
+          </div>
+          <div class="swatch-item">
+            <div class="color-swatch" style="background: #e8d09b;"></div>
+            <span class="swatch-name">Champagne</span>
+          </div>
+          <div class="swatch-item">
+            <div class="color-swatch" style="background: #d4a373;"></div>
+            <span class="swatch-name">Earth Tone</span>
+          </div>
+          <div class="swatch-item">
+            <div class="color-swatch" style="background: #ffffff; border: 1.5px solid #ccc;"></div>
+            <span class="swatch-name">White</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIVE STREAMING SECTION -->
+      <div class="streaming-card" data-aos="fade-up" id="streamingContainer">
+        <div style="font-weight: 700; font-size: 1.05rem; color: var(--text-main);">LIVE STREAMING ACARA</div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+          Bagi keluarga dan kerabat yang berhalangan hadir secara langsung, silakan bergabung melalui siaran virtual:
+        </p>
+        <a id="btnStreaming" href="#" target="_blank" class="btn-stream">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+          Tonton Live Streaming
+        </a>
+      </div>
+
+    </section>
+
+    <!-- 7. LOVE STORY -->
+    <section>
+      <div class="section-tag" data-aos="fade-up">Perjalanan Kami</div>
+      <h3 class="section-title" data-aos="fade-up">Our Love Story</h3>
+      <div id="storyTimeline" class="story-timeline" data-aos="fade-up"></div>
+    </section>
+
+    <!-- 8. GALERI FOTO -->
+    <section style="background: var(--bg-card);">
+      <div class="section-tag" data-aos="fade-up">Galeri Momen</div>
+      <h3 class="section-title" data-aos="fade-up">Our Moments</h3>
+      <div id="galleryGrid" class="gallery-grid" data-aos="fade-up"></div>
+    </section>
+
+    <!-- 9. AMPLOP DIGITAL -->
+    <section>
+      <div class="section-tag" data-aos="fade-up">Tanda Kasih</div>
+      <h3 class="section-title" data-aos="fade-up">Wedding Gift</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 25px;" data-aos="fade-up">
+        Doa restu Anda merupakan karunia terindah bagi kami. Namun jika berkenan memberikan tanda kasih, Anda dapat menyalurkannya melalui:
+      </p>
+      <div id="bankContainer" data-aos="fade-up"></div>
+    </section>
+
+    <!-- 10. RSVP & BUKU TAMU -->
+    <section style="background: var(--bg-card);">
+      <div class="section-tag" data-aos="fade-up">Kehadiran & Doa</div>
+      <h3 class="section-title" data-aos="fade-up">Buku Tamu & RSVP</h3>
+
+      <form id="rsvpForm" class="rsvp-form" data-aos="fade-up">
+        <div class="form-group">
+          <label class="form-label" for="rsvpName">Nama Lengkap</label>
+          <input type="text" id="rsvpName" class="form-input" placeholder="Masukkan nama Anda" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rsvpStatus">Konfirmasi Kehadiran</label>
+          <select id="rsvpStatus" class="form-select">
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Berhalangan Hadir</option>
+            <option value="Ragu-ragu">Masih Ragu-ragu</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rsvpMessage">Ucapan & Doa Restu</label>
+          <textarea id="rsvpMessage" class="form-textarea" rows="3" placeholder="Tuliskan doa restu untuk kedua mempelai..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Kirim Ucapan & Konfirmasi</button>
+      </form>
+
+      <!-- Live Wishes List -->
+      <div id="wishesList" class="wishes-container" data-aos="fade-up"></div>
+    </section>
+
+    <!-- 11. FOOTER BRANDING -->
+    <footer>
+      <p id="footerBrandingText" style="margin-bottom: 5px;">Dibuat dengan segenap cinta oleh</p>
+      <a id="brandLink" href="#" target="_blank"><strong id="brandName">UndanganKita.id</strong></a>
+      <p style="margin-top: 15px; font-size: 0.75rem; opacity: 0.6;">© 2026 All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastMsg" class="toast-msg"></div>
+
+  <!-- AOS JS CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- SCRIPT FILES -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
