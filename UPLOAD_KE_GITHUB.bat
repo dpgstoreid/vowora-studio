@@ -19,7 +19,7 @@ git remote remove origin 2>nul
 git remote add origin %REPO_URL%
 git branch -M main
 echo Mengupload file website Vowora ke GitHub...
-git push -u origin main
+git push -u --force origin main
 
 echo.
 echo ======================================================
